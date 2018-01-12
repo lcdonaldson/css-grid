@@ -18,6 +18,7 @@ html {
   --text-color: #f1f1f1;
 }
 nav a { color: var(--text-color);}
+nav a:hover { color: #333; }
 .site {
   display: grid;
   grid-template-columns:repeat(4, 2fr);
