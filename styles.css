@@ -16,9 +16,11 @@ html {
   --side-color: red;
   --footer-color: purple;
   --text-color: #f1f1f1;
+  --charcole-grey: #444;
+  --border-blk: #333;  
 }
 nav a { color: var(--text-color);}
-nav a:hover { color: #333; }
+nav a:hover { color: var(--border-blk); }
 .site {
   display: grid;
   grid-template-columns:repeat(4, 2fr);
@@ -39,7 +41,7 @@ nav a:hover { color: #333; }
 
 .media {
   margin-bottom: 2em;
-  border: 2px solid #444;
+  border: 2px solid var(--charcole-grey);
   padding: 10px;
 }
 
