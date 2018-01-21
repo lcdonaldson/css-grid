@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: 'helvetica neue';
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 200;
 }
 
@@ -42,7 +42,7 @@ nav a:hover { color: var(--border-blk); }
 .media {
   margin-bottom: 2em;
   border: 2px solid var(--charcole-grey);
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .media > .title { grid-area: title; }
@@ -51,7 +51,7 @@ nav a:hover { color: var(--border-blk); }
 
 .media {
   display: grid;
-  grid-column-gap: 20px;
+  grid-column-gap: 1.2rem;
   grid-template-areas:
     "title"
     "img"
@@ -76,16 +76,16 @@ nav a:hover { color: var(--border-blk); }
   }
 
   .media > .media {
-    margin-left: 160px;
+    margin-left: 10rem;
     clear: both;
   }
 
   .media .img {
     float: left;
-    margin: 0 10px 0 0;
-    width: 150px;
+    margin: 0 0.5rem 0 0;
+    width: 9.5rem;
   }
   
-  .media > * { margin: 0 0 0 160px; }
+  .media > * { margin: 0 0 0 10rem; }
 }
 
