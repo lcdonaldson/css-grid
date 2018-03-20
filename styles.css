@@ -61,7 +61,8 @@ nav a:hover { color: var(--border-blk); }
 
 .footer { 
     grid-area: footer; 
-    text-align: center; 
+    text-align: center;
+    align-items: center;
     padding-top: 1rem; 
     background-color: var(--footer-color); 
 }
