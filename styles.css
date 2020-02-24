@@ -17,22 +17,47 @@ html {
   --footer-color: purple;
   --text-color: #f1f1f1;
 }
+nav { padding: 0.5rem 0.5rem 0 0; }
 nav a { color: var(--text-color);}
 .site {
   display: grid;
   grid-template-columns:repeat(4, 2fr);
-  grid-template-rows:repeat(4, 2fr);
+  grid-template-rows:repeat(5, 2fr);
   grid-template-areas:
   "header header header header"
   "side main main main"
   "side main main main"
   "footer footer footer footer";
   grid-gap: 0.5rem;
-  background-color: var(--main-color);
+  justify-items: stretch;
+  /* background-color: var(--main-color); */
 }
-.masthead { grid-area: header; background-color: var(--head-color);}
-.nav { text-align: right;}
-.page-title { text-align: center; background-color: var(--title-color);}
-.side { grid-area: side; background-color: var(--side-color);}
-.main-content { grid-area: main; background-color: var(--content-color);}
-.footer {grid-area: footer; text-align: center; padding-top: 1rem; background-color: var(--footer-color);}
+.nav { text-align: right; }
+.masthead {
+  grid-area: header;
+  background-color: var(--head-color);
+}
+.page-title {
+  margin: 0.2rem;
+  text-align: center;
+  background-color: var(--title-color);
+}
+.side {
+  grid-area: side;
+  grid-row: 2/5;
+  padding: 0.5rem;
+  background-color: var(--side-color);
+}
+.main-content {
+  grid-area: main;
+  grid-row: 2/5;
+  padding: 0.5rem;
+  background-color: var(--content-color);
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding-top: 1rem;
+  grid-row: 5/8;
+  background-color: var(--footer-color);
+}
