@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: 'helvetica neue';
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 200;
 }
 
@@ -16,9 +16,12 @@ html {
   --side-color: red;
   --footer-color: purple;
   --text-color: #f1f1f1;
+  --charcole-grey: #444;
+  --border-blk: #333;  
 }
 nav { padding: 0.5rem 0.5rem 0 0; }
 nav a { color: var(--text-color);}
+nav a:hover { color: var(--border-blk); }
 .site {
   display: grid;
   grid-template-columns:repeat(4, 2fr);
