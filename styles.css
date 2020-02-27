@@ -17,8 +17,11 @@ html {
   --footer-color: purple;
   --text-color: #f1f1f1;
   --charcole-grey: #444;
-  --border-blk: #333;  
+  --border-blk: #333;
+  --primary: #017acd;
 }
+a {text-decoration: none;}
+
 nav { padding: 0.5rem 0.5rem 0 0; }
 nav a { color: var(--text-color);}
 nav a:hover { color: var(--border-blk); }
@@ -63,4 +66,113 @@ nav a:hover { color: var(--border-blk); }
   padding-top: 1rem;
   grid-row: 5/8;
   background-color: var(--footer-color);
+}
+
+
+/* google-clone styles */
+.parent {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.btn {
+  padding: 0.50rem;
+  min-width: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 6;
+  background-color: #f7f7f7;
+}
+
+.div2 {
+  grid-area: 1 / 4 / 1 / 6;
+}
+
+.div3 {
+  grid-area: 2 / 2 / 3 / 5;
+  background-color: lightblue;
+  position: relative;
+}
+
+.div4 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: pink;
+}
+
+.div5 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: yellow;
+}
+
+.div6 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: lightgreen;
+}
+
+.div7 {
+  grid-area: 5 / 1 / 6 / 6;
+  background-color: orange;
+}
+
+.div2Parent {
+  display: flex;
+  height: 3rem;
+}
+
+.pChild1 {
+  flex: 1;
+  align-self: center;
+  margin: 0.25em;
+  background-color: red;
+}
+
+.pChild2 {
+  flex: 1;
+  align-self: center;
+  margin: 0.25em;
+  background-color: yellow;
+}
+
+.pChild3 {
+  flex: 1;
+  align-self: center;
+  margin: 0.25em;
+  background-color: blue;
+}
+
+.tac {
+  text-align: center;
+}
+
+.ib {
+  display: inline-block
+}
+
+.m0 {
+  margin: 0;
+}
+
+.pa-half {
+  padding: 0.5rem;
+}
+
+.ri {
+  padding: 0.50rem;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  background-color: #f0eeee;
 }
