@@ -40,10 +40,10 @@ show = () => {
 remove = () => {
     let id = this.getAttribute('id');
     let todos = get_todos();
+    
     todos.splice(id, 1);
     localStorage.setItem('todo', JSON.stringify(todos));
-
     show();
-
+    
     return false;
 }
